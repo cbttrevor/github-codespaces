@@ -1,0 +1,90 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.209.6/containers/ubuntu
+{
+	"name": "Ubuntu",
+	"build": {
+		"dockerfile": "Dockerfile",
+		// Update 'VARIANT' to pick an Ubuntu version: hirsute, focal, bionic
+		// Use hirsute or bionic on local arm64/Apple Silicon.
+		"args": { "VARIANT": "hirsute" }
+	},
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {},
+
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"4ops.packer",
+		"4ops.terraform",
+		"amazonwebservices.aws-toolkit-vscode",
+		"arcticicestudio.nord-visual-studio-code",
+		"cweijan.vscode-autohotkey-plus",
+		"daylerees.rainglow",
+		"donjayamanne.githistory",
+		"DotJoshJohnson.xml",
+		"dracula-theme.theme-dracula",
+		"eamodio.gitlens",
+		"EliverLara.andromeda",
+		"Equinusocio.vsc-community-material-theme",
+		"equinusocio.vsc-material-theme-icons",
+		"felipe-mendes.slack-theme",
+		"formulahendry.code-runner",
+		"GitHub.codespaces",
+		"GitHub.github-vscode-theme",
+		"GitHub.vscode-pull-request-github",
+		"gitpod.gitpod-remote-ssh",
+		"hbenl.vscode-test-explorer",
+		"icsharpcode.ilspy-vscode",
+		"iliazeus.vscode-ansi",
+		"influxdata.flux",
+		"johnpapa.vscode-peacock",
+		"kenhowardpdx.vscode-gist",
+		"littlefoxteam.vscode-python-test-adapter",
+		"ms-azuretools.vscode-azurefunctions",
+		"ms-azuretools.vscode-azureresourcegroups",
+		"ms-azuretools.vscode-docker",
+		"ms-dotnettools.csharp",
+		"ms-dotnettools.vscode-dotnet-runtime",
+		"ms-kubernetes-tools.vscode-kubernetes-tools",
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"ms-toolsai.jupyter",
+		"ms-toolsai.jupyter-keymap",
+		"ms-toolsai.jupyter-renderers",
+		"ms-vscode.azure-account",
+		"ms-vscode.cpptools",
+		"ms-vscode.powershell",
+		"ms-vscode.test-adapter-converter",
+		"ms-vsliveshare.vsliveshare",
+		"Nuuf.theme-hackershaze",
+		"octref.vetur",
+		"oderwat.indent-rainbow",
+		"redhat.vscode-commons",
+		"redhat.vscode-yaml",
+		"ritwickdey.LiveServer",
+		"RobbOwen.synthwave-vscode",
+		"samrapdev.outrun",
+		"TabNine.tabnine-vscode",
+		"Unity.unity-debug",
+		"usernamehw.errorlens",
+		"webrender.synthwave-x-fluoromachine",
+		"ymotongpoo.licenser"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode",
+	"features": {
+		"terraform": "latest",
+		"github-cli": "latest",
+		"node": "lts",
+		"python": "latest",
+		"powershell": "latest"
+	}
+}
